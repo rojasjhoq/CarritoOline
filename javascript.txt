@@ -1,0 +1,19 @@
+<script data-main="../Scripts/require-config.js" src="~/Scripts/require.js"></script>
+
+
+define([], function () {
+    var init = function () {
+        "jhonatan rojas";
+    };
+    console.log(init);
+    return {
+        
+        init: init
+    }
+});
+
+
+require(['app/user/user','jquery'], function (o,$) {
+    o.init();
+    console.log(o.init);
+});
